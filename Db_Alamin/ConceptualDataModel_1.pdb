@@ -4549,8 +4549,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 </o:ReferenceSymbol>
 <o:ReferenceSymbol Id="o30">
 <a:ModificationDate>1510419600</a:ModificationDate>
-<a:Rect>((-115645,-18109), (-42982,31978))</a:Rect>
-<a:ListOfPoints>((-43382,31578),(-82741,31578),(-82741,-17484),(-115245,-17484))</a:ListOfPoints>
+<a:Rect>((-129052,-42703), (-113013,-28527))</a:Rect>
+<a:ListOfPoints>((-113413,-42303),(-128427,-42303),(-128427,-28927))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>11184640</a:LineColor>
@@ -4570,8 +4570,8 @@ DESTINATION 0 Arial,8,N</a:FontList>
 </o:ReferenceSymbol>
 <o:ReferenceSymbol Id="o33">
 <a:ModificationDate>1510419600</a:ModificationDate>
-<a:Rect>((-106887,-2577), (-35709,33778))</a:Rect>
-<a:ListOfPoints>((-36109,32032),(-36109,33378),(-106262,33378),(-106262,-2177))</a:ListOfPoints>
+<a:Rect>((-99268,-42703), (-82424,-4286))</a:Rect>
+<a:ListOfPoints>((-98868,-42303),(-82824,-42303),(-82824,-4911),(-92599,-4911))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>1</a:ArrowStyle>
 <a:LineColor>11184640</a:LineColor>
@@ -6096,7 +6096,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:TableSymbol Id="o31">
 <a:ModificationDate>1510419600</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-43382,28033), (-28837,32032))</a:Rect>
+<a:Rect>((-113413,-44303), (-98868,-40304))</a:Rect>
 <a:LineColor>11184640</a:LineColor>
 <a:FillColor>16570034</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
