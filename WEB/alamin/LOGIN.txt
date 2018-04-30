@@ -1,0 +1,5 @@
+username: cnjonathan.cnj@gmail.com
+password: 111222
+database: id5580224_amin
+
+Semua password 111222, dibuat sama biar mudah ingat. 
