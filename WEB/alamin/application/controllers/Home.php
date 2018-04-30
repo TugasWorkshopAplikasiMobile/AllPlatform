@@ -16,7 +16,7 @@ class Home extends AUTH_Controller {
 		$data['userdata'] 		= $this->userdata;
 
 		$rand = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f');
-		
+
 		$posisi 				= $this->M_posisi->select_all();
 		$index = 0;
 		foreach ($posisi as $value) {
@@ -28,7 +28,7 @@ class Home extends AUTH_Controller {
 			$data_posisi[$index]['color'] = $color;
 			$data_posisi[$index]['highlight'] = $color;
 			$data_posisi[$index]['label'] = $value->nama;
-			
+
 			$index++;
 		}
 
@@ -43,7 +43,7 @@ class Home extends AUTH_Controller {
 			$data_kota[$index]['color'] = $color;
 			$data_kota[$index]['highlight'] = $color;
 			$data_kota[$index]['label'] = $value->nama;
-			
+
 			$index++;
 		}
 
