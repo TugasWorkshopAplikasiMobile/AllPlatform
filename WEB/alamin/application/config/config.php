@@ -37,7 +37,7 @@ $config['base_url'] = $root;
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'http://localhost/kuliah/webpull/WEB/alamin/';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
