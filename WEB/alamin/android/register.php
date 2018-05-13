@@ -8,10 +8,10 @@ if(isset($_POST['name']) && isset($_POST['email'])&& isset($_POST['password']))
     $email=$_POST["email"];
     $password=$_POST["password"];
     
-	$result = mysqli_query($conn, "SELECT email FROM admin WHERE email = '".$email."'");	
+	$result = mysqli_query($conn, "SELECT NAMA_ADMIN FROM admin WHERE email = '".$email."'");	
 	if(mysqli_num_rows($result) > 0)
 	{	
-		echo "email exist";
+		echo "username telah ada";
 		exit;
 	}			
 	else
