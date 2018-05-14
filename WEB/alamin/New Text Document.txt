@@ -1,0 +1,7 @@
+username db : id3030348_amin27
+nama db : id3030348_amin
+password db : 111222
+
+
+username webhost : bi27	
+password : 12345678
