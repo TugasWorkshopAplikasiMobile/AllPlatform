@@ -16,6 +16,23 @@
       </span>
       <input type="text" class="form-control" placeholder="Nomor Telepon" name="telp" aria-describedby="sizing-addon2">
     </div>
+
+     <div class="input-group form-group">
+      <span class="input-group-addon" id="sizing-addon2">
+        <i class="fa fa-fw fa-user"></i>
+      </span>
+      <input type="text" class="form-control" placeholder="Username" name="user" aria-describedby="sizing-addon2">
+    </div>
+
+
+     <div class="input-group form-group">
+      <span class="input-group-addon" id="sizing-addon2">
+        <i class="fa fa-fw fa-lock"></i>
+      </span>
+      <input type="password" class="form-control" placeholder="Password" name="paswd" aria-describedby="sizing-addon2">
+    </div>
+
+
     <div class="input-group form-group">
       <span class="input-group-addon" id="sizing-addon2">
         <i class="glyphicon glyphicon-home"></i>
@@ -32,6 +49,8 @@
         ?>
       </select>
     </div>
+    
+      
     <div class="input-group form-group" style="display: inline-block;">
       <span class="input-group-addon" id="sizing-addon2">
       <i class="glyphicon glyphicon-tag"></i>
