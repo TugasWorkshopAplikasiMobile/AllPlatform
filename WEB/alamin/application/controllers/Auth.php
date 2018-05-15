@@ -18,12 +18,12 @@ class Auth extends CI_Controller {
 	}
 
 	public function login() {
-		$this->form_validation->set_rules('username', 'Username', 'required|min_length[4]|max_length[15]');
-		$this->form_validation->set_rules('password', 'Password', 'required');
+		$this->form_validation->set_rules('USERNAME_ADMIN', 'Username', 'required|min_length[4]|max_length[15]');
+		$this->form_validation->set_rules('PASSWORD_ADMIN', 'Password', 'required');
 
 		if ($this->form_validation->run() == TRUE) {
-			$username = trim($_POST['username']);
-			$password = trim($_POST['password']);
+			$username = trim($_POST['USERNAME_ADMIN']);
+			$password = trim($_POST['PASSWORD_ADMIN']);
 
 			$data = $this->M_auth->login($username, $password);
 
@@ -31,7 +31,7 @@ class Auth extends CI_Controller {
 				$this->session->set_flashdata('error_msg', 'Username / Password Anda Salah.');
 				redirect('Auth');
 			} else {
-				$session = [
+				$session = [	
 					'userdata' => $data,
 					'status' => "Loged in"
 				];
