@@ -8,7 +8,7 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
     
    $password=$_POST["password"];
   
-   $result = mysqli_query($conn, "select * from admin where email='$username' && password='$password'");
+   $result = mysqli_query($conn, "select * from admin where username='$username' && password='$password'");
 
 	if(mysqli_num_rows($result) > 0)
 	{	

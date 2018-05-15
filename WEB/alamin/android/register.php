@@ -2,13 +2,13 @@
 
 include("connection.php");
 
-if(isset($_POST['name']) && isset($_POST['email'])&& isset($_POST['password']))
+if(isset($_POST['username'])&& isset($_POST['password']))
 {
-	$name=$_POST["name"];
-    $email=$_POST["email"];
+	// $name=$_POST["name"];
+    $username=$_POST["username"];
     $password=$_POST["password"];
     
-	$result = mysqli_query($conn, "SELECT NAMA_ADMIN FROM admin WHERE email = '".$email."'");	
+	$result = mysqli_query($conn, "SELECT username FROM admin WHERE username = '".$username."'");	
 	if(mysqli_num_rows($result) > 0)
 	{	
 		echo "username telah ada";
@@ -16,7 +16,7 @@ if(isset($_POST['name']) && isset($_POST['email'])&& isset($_POST['password']))
 	}			
 	else
 	{	
-      $query="INSERT INTO admin(name,email,password)VALUES('$name','$email','$password')";
+      $query="INSERT INTO admin(id_user,username,password)VALUES('','$username','$password')";
 
       $data=mysqli_query($conn,$query);
  
