@@ -21,29 +21,40 @@
 
       <li <?php if ($page == 'home') {echo 'class="active"';} ?>>
         <a href="<?php echo base_url('Home'); ?>">
-          <i class="fa fa-home"></i>
+         <i class="fa fa-fw fa-home"></i>
           <span>Home</span>
         </a>
       </li>
       
       <li <?php if ($page == 'pegawai') {echo 'class="active"';} ?>>
         <a href="<?php echo base_url('Pegawai'); ?>">
-          <i class="fa fa-user"></i>
-          <span>Data Pegawai</span>
+       <i class="fa fa-fw fa-user-plus"></i> 
+          <span>Data Petugas</span>
         </a>
       </li>
 
       <li <?php if ($page == 'posisi') {echo 'class="active"';} ?>>
         <a href="<?php echo base_url('Posisi'); ?>">
-          <i class="fa fa-briefcase"></i>
+         <i class="fa fa-fw fa-briefcase"></i>
           <span>Data Posisi</span>
         </a>
       </li>
-      
+    <li <?php if ($page == 'kota') {echo 'class="active"';} ?>>
+        <a href="<?php echo base_url('Kota'); ?>">
+          <i class="fa fa-fw fa-info-circle"></i>
+          <span>Penggumuman</span>
+        </a>
+      </li>
+    <li <?php if ($page == 'kota') {echo 'class="active"';} ?>>
+        <a href="<?php echo base_url('Kota'); ?>">
+         <i class="fa fa-fw fa-graduation-cap"></i>
+          <span>Data Siswa</span>
+        </a>
+      </li>
       <li <?php if ($page == 'kota') {echo 'class="active"';} ?>>
         <a href="<?php echo base_url('Kota'); ?>">
-          <i class="fa fa-location-arrow"></i>
-          <span>Data Kota</span>
+         <i class="fa fa-fw fa-check-square-o"></i> 
+          <span>Verivikasi Daftar Ulang</span>
         </a>
       </li>
     </ul>
