@@ -5,8 +5,8 @@ class M_auth extends CI_Model {
 	public function login($user, $pass) {
 		$this->db->select('*');
 		$this->db->from('admin');
-		$this->db->where('username', $user);
-		$this->db->where('password', md5($pass));
+		$this->db->where('USERNAME_ADMIN',$user);
+		$this->db->where('PASSWORD_ADMIN',($pass));
 
 		$data = $this->db->get();
 
