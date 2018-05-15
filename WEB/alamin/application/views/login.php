@@ -1,3 +1,6 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +10,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bs.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/eksternal/font-awesome.min.css">
     <!-- Ionicons -->
@@ -24,28 +27,103 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="hold-transition login-page">
+  <section class="login-block">
+    <div class="container">
+  <div class="row">
+    <div class="col-md-4 login-sec">
+       <a href="<?php echo base_url(); ?>assets/index2.html"><h2 class="text-center">Login Now</h2></a>
+        <form action="<?php echo base_url('Auth/login'); ?>" class="login-form">
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+    <input type="text" class="form-control" placeholder="Username" name="USERNAME_ADMIN">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="text-uppercase">Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="PASSWORD_ADMIN">
+  </div>
+  
+  
+    <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      <!-- <small>Remember Me</small> -->
+    </label>
+    <button type="submit" class="btn btn-login float-right">Masuk</button>
+
+    <?php
+        echo show_err_msg($this->session->flashdata('error_msg'));
+      ?>
+  </div>
+      <script src="<?php echo base_url(); ?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
+  
+</form>
+<div class="copy-text">Created with <i class="fa fa-heart"></i> by <a href="http://grafreez.com">Grafreez.com</a></div>
+    </div>
+    <div class="col-md-8 banner-sec">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+            <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid" src="https://situsbudaya.id/wp-content/uploads/2017/10/masjid-jami-al-baitul-amien.jpg" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text">
+            <h2>This is Heaven</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        </div>  
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text">
+            <h2>This is Heaven</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        </div>  
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-text">
+            <h2>This is Heaven</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        </div>  
+    </div>
+  </div>
+  </div>           
+    </div>
+  </div>
+</div>
+</section>
+<!--   <body class="hold-transition login-page">
     <div class="login-box">
-      <div class="login-logo">
-        <a href="<?php echo base_url(); ?>assets/index2.html"><b>Login Admin Yayasan Pendidikan Al-Baitul Amien</b></a>
-      </div>
+      <div class="login-logo"> -->
+      <!--   <a href="<?php //echo base_url(); ?>assets/index2.html"><b>Login Admin Yayasan Pendidikan Al-Baitul Amien</b></a> -->
+      <!-- </div> -->
 
       <!-- /.login-logo -->
-      <div class="login-box-body">
-        <p class="login-box-msg">
-          Log in to start your session
-        </p>
+            <!-- <div class="login-box-body"> -->
+        <!-- <p class="login-box-msg"> -->
+          <!-- Log in to start your session -->
+        <!-- </p> -->
 
-        <form action="<?php echo base_url('Auth/login'); ?>" method="post">
-          <div class="form-group has-feedback">
+        <!-- <form action="<?php //echo base_url('Auth/login'); ?>" method="post"> -->
+<!--           <div class="form-group has-feedback">
             <input type="text" class="form-control" placeholder="Username" name="USERNAME_ADMIN">
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
             <input type="password" class="form-control" placeholder="Password" name="PASSWORD_ADMIN">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-          </div>
-          <div class="row">
+          </div> -->
+          <!-- <div class="row"> -->
             <!-- <div class="col-xs-8">
               <div class="checkbox icheck">
                 <label>
@@ -53,11 +131,11 @@
                 </label>
               </div>
             </div> -->
-            <div class="col-xs-offset-8 col-xs-4">
+<!--             <div class="col-xs-offset-8 col-xs-4">
               <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
             </div>
           </div>
-        </form>
+        </form> -->
 
         <!-- <div class="social-auth-links text-center">
           <p>- OR -</p>
@@ -71,12 +149,12 @@
         <!-- <a href="#">I forgot my password</a><br>
         <a href="register.html" class="text-center">Register a new membership</a> -->
 
-      </div>
+      <!-- </div> -->
       <!-- /.login-box-body -->
-      <?php
-        echo show_err_msg($this->session->flashdata('error_msg'));
+<!--       <?php
+     //   echo show_err_msg($this->session->flashdata('error_msg'));
       ?>
-    </div>
+ -->    <!-- </div> -->
     
 
     <!-- /.login-box -->
@@ -86,7 +164,7 @@
     <!-- Bootstrap 3.3.6 -->
     <script src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- iCheck -->
-    <!-- <script src="<?php echo base_url(); ?>assets/plugins/iCheck/icheck.min.js"></script> -->
+    <!-- <script src="<?php //echo base_url(); ?>assets/plugins/iCheck/icheck.min.js"></script> -->
     <!-- <script>
       $(function () {
         $('input').iCheck({
