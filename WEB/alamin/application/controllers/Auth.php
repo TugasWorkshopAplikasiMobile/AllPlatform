@@ -18,18 +18,14 @@ class Auth extends CI_Controller {
 	}
 
 	public function login() {
-		$this->form_validation->set_rules('USERNAME_ADMIN', 'Username', 'required|min_length[4]|max_length[15]');
-		$this->form_validation->set_rules('PASSWORD_ADMIN', 'Password', 'required');
-
-		if ($this->form_validation->run() == TRUE) {
 			$username = trim($_POST['USERNAME_ADMIN']);
 			$password = trim($_POST['PASSWORD_ADMIN']);
 
 			$data = $this->M_auth->login($username, $password);
 
 			if ($data == false) {
-				$this->session->set_flashdata('error_msg', 'Username / Password Anda Salah.');
-				redirect('Auth');
+				$this->session->set_flashdata('error_msg', 'Username / Password Anda Salah.'.$username);
+				redirect('Auth?i');
 			} else {
 				$session = [	
 					'userdata' => $data,
@@ -38,10 +34,6 @@ class Auth extends CI_Controller {
 				$this->session->set_userdata($session);
 				redirect('Home');
 			}
-		} else {
-			$this->session->set_flashdata('error_msg', validation_errors());
-			redirect('Auth');
-		}
 	}
 
 	public function logout() {

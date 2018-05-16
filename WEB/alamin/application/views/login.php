@@ -32,7 +32,7 @@
   <div class="row">
     <div class="col-md-4 login-sec">
        <a href="<?php echo base_url('Auth'); ?>"><h2 class="text-center"  style="color: #27ae60;">LOGIN</h2></a>
-        <form action="<?php echo base_url('Auth/login'); ?>" class="login-form">
+        <form action="<?php echo base_url('Auth/login'); ?>" method="post" class="login-form">
   <div class="form-group">
     <label for="exampleInputEmail1" >Username</label>
     <input type="text" class="form-control" placeholder="" name="USERNAME_ADMIN">
