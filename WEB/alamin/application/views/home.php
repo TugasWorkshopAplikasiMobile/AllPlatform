@@ -2,7 +2,7 @@
   <div class="col-lg-4 col-xs-6">
     <div class="small-box bg-aqua">
       <div class="inner">
-        <!-- <h3><?php echo $jml_pegawai; ?></h3> -->
+        <h3><?php echo "Petekar"; ?></h3>
 
         <p>Jumlah Pegawai</p>
       </div>
@@ -75,6 +75,7 @@
     </div>
   </div>
 </div>
+<a href="<?php echo base_url('Auth/logout'); ?>">Logout</a>
 
 <script src="<?php echo base_url(); ?>assets/plugins/chartjs/Chart.min.js"></script>
 <script>
