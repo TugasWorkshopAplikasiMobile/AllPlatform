@@ -2,6 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_auth extends CI_Model {
+
+	
 	public function login($user, $pass) {
 		$this->db->select('*');
 		$this->db->from('admin');

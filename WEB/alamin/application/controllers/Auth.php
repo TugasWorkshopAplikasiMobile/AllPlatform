@@ -6,7 +6,7 @@ class Auth extends CI_Controller {
 		parent::__construct();
 		$this->load->model('M_auth');
 	}
-	
+
 	public function index() {
 		$session = $this->session->userdata('status');
 
@@ -21,13 +21,13 @@ class Auth extends CI_Controller {
 			$username = trim($_POST['USERNAME_ADMIN']);
 			$password = trim($_POST['PASSWORD_ADMIN']);
 
-			$data = $this->M_auth->login($username, $password);
+			$data = $this->M_auth->login($user, $pass);
 
 			if ($data == false) {
-				$this->session->set_flashdata('error_msg', 'Username / Password Anda Salah.'.$username);
-				redirect('Auth?i');
+				$this->session->set_flashdata('error_msg', 'Username / Password Anda Salah.'.$user);
+				redirect('Auth');
 			} else {
-				$session = [	
+				$session = [
 					'userdata' => $data,
 					'status' => "Loged in"
 				];
